@@ -4,26 +4,30 @@
         <div class="col-8 bg-light mt-5 main shadow">
             <div class="row">
             <div class="col-6 mt-5">
-               <img src="./images/st.png" alt="" height="60px">
-                <form action="" class="p-3">
-                    <input type="text"  id="uname" class="form-control mt-3" placeholder="Username">
-                    <input type="text"  id="accno" class="form-control mt-3" placeholder="Account Number">
-                    <input type="password" id="psswd" class="form-control mt-3" placeholder="Password">
-                </form>
+                <img src="../../assets/image/kindpng_2015853.png" alt="" height="60px">
+                <form [formGroup]="registerform" class="p-3 mt-3">
+
+              
+               
+                    <input type="text" formControlName="uname" id="uname" class="form-control mt-3" placeholder="Username">
+                    <input type="text" formControlName="acno" id="accno" class="form-control mt-3" placeholder="Account Number">
+                    <input type="password" formControlName="pswd" id="psswd" class="form-control mt-3" placeholder="Password">
+              
                 <div class="d-grid gap-2 col-6 mx-auto">
-                    <button class="btn shadow mt-4" type="button" onclick="register()">Register</button>
+                    <button class="btn shadow mt-4" type="button" (click)="register()">Register</button>
         
                 </div>
+            </form>
                 <h1></h1>
     
                 
                 <br>
-                <p style="color: rgb(156, 156, 156);">Don't have an Account?<a href="./index.html" id="signin"><span> <b>Sign Up</b> </span></a></p>
+                <p style="color: rgb(156, 156, 156);">Don't have an Account?<a routerLink="" id="signin"><span> <b>Login in</b> </span></a></p>
                 <br>
             </div>        
             <div class="col-6 bg1">
                 <div class="container">
-               <h1 id="head">HEI<br>WELCOME<br>BACK</h1>
+               <h1 id="head">Hello<br>WELCOME<br>BACK</h1>
             </div>
         </div>
         </div></div>

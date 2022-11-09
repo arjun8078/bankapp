@@ -1,0 +1,71 @@
+<h1>Welcome {{user}}</h1>
+<div><a id="a1" routerLink="/transaction">Transaction details</a></div>
+
+<div class="parent d-flex justify-content-evenly">
+    <div class="child"><div class="container">
+        <div class="row">
+            <div class="col-2"></div>
+            <div class="col-8 bg-light mt-5 main shadow">
+                <div class="row">
+                <div class="col-6 mt-5">
+                   <img src="../../assets/image/pngwing.com.png" alt="" height="50px">
+                    
+                        <input type="text" [(ngModel)]="acno" id="accno" class="form-control mt-3" placeholder="Account Number">
+                        <input type="text" [(ngModel)]="pass" id="pass" class="form-control mt-3" placeholder="password">
+                        <input type="password" [(ngModel)]="amount" id="amount" class="form-control mt-3" placeholder="Amount">
+                  
+                    <div class="d-grid gap-2 col-6 mx-auto">
+                        <button class="btn shadow mt-4" type="button" (click)="deposit()">Deposit</button>
+            
+                    </div>
+                    <h1></h1>
+        
+                    
+                    <br>
+                    
+                    <br>
+                </div>        
+                <div class="col-6 bg1">
+                    <div class="container">
+                   <h1 id="head">Hello<br>WELCOME<br>BACK</h1>
+                </div>
+            </div>
+            </div></div>
+            <div class="col-2"></div>
+        </div>
+    </div>
+    </div>
+    <div class="child"><div class="container">
+        <div class="row">
+            <div class="col-2"></div>
+            <div class="col-8 bg-light mt-5 main shadow">
+                <div class="row">
+                <div class="col-6 mt-5">
+                   <img src="../../assets/image/pngwing.com.png" alt="" height="50px">
+                    
+                        <input type="text" [(ngModel)]="acno1" id="acno" class="form-control mt-3" placeholder="Acount Number">
+                        <input type="text" [(ngModel)]="pass1" id="pswd" class="form-control mt-3" placeholder="Password">
+                        <input type="password" [(ngModel)]="amount1" id="amount" class="form-control mt-3" placeholder="Password">
+                  
+                    <div class="d-grid gap-2 col-6 mx-auto">
+                        <button class="btn shadow mt-4" type="button" (click)="withdraw()">Withdraw</button>
+            
+                    </div>
+                    <h1></h1>
+        
+                    
+                    <br>
+<                   
+                    <br>
+                </div>        
+                <div class="col-6 bg1">
+                    <div class="container">
+                   <h1 id="head">Hello<br>WELCOME<br>BACK</h1>
+                </div>
+            </div>
+            </div></div>
+            <div class="col-2"></div>
+        </div>
+    </div>
+    </div>
+</div>
